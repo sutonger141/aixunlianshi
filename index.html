@@ -1099,9 +1099,9 @@
           <div class="hero-visual">
             <!-- 替换原来的光环为全息数字人 -->
             <div class="avatar-container">
-              <!-- 隐藏的绿幕视频源 -->
-              <video id="avatar-video" src="avatar.mp4" crossorigin="anonymous" playsinline webkit-playsinline></video>
-              <!-- 用于展示抠像后结果的画布 -->
+              <video id="avatar-video" playsinline webkit-playsinline preload="metadata" poster="avatar-poster.jpg" crossorigin="anonymous">
+                <source src="avatar-720.mp4" type="video/mp4">
+              </video>
               <canvas id="avatar-canvas"></canvas>
               <div class="play-hint" id="play-hint">点击与我互动 👋</div>
             </div>
